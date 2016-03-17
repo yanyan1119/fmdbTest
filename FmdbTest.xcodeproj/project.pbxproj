@@ -15,6 +15,9 @@
 		265793A51C9A8F0A006BF301 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 265793A31C9A8F0A006BF301 /* LaunchScreen.storyboard */; };
 		265793B01C9A8F0A006BF301 /* FmdbTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 265793AF1C9A8F0A006BF301 /* FmdbTestTests.m */; };
 		265793BB1C9A8F0A006BF301 /* FmdbTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 265793BA1C9A8F0A006BF301 /* FmdbTestUITests.m */; };
+		265793CD1C9A900B006BF301 /* FmdbEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 265793CC1C9A900B006BF301 /* FmdbEngine.m */; };
+		265793D01C9A9844006BF301 /* StudentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 265793CF1C9A9844006BF301 /* StudentModel.m */; };
+		3A05572DDC398371BC4CCD90 /* libPods-FmdbTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C33ECA0F12EAB749DF3D20A8 /* libPods-FmdbTest.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,13 @@
 		265793B61C9A8F0A006BF301 /* FmdbTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FmdbTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		265793BA1C9A8F0A006BF301 /* FmdbTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FmdbTestUITests.m; sourceTree = "<group>"; };
 		265793BC1C9A8F0A006BF301 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		265793CB1C9A900B006BF301 /* FmdbEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FmdbEngine.h; sourceTree = "<group>"; };
+		265793CC1C9A900B006BF301 /* FmdbEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FmdbEngine.m; sourceTree = "<group>"; };
+		265793CE1C9A9844006BF301 /* StudentModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentModel.h; sourceTree = "<group>"; };
+		265793CF1C9A9844006BF301 /* StudentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentModel.m; sourceTree = "<group>"; };
+		2920BDE8C7F62AD5CEFFECAF /* Pods-FmdbTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FmdbTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FmdbTest/Pods-FmdbTest.debug.xcconfig"; sourceTree = "<group>"; };
+		B2287B428A48E40699E33919 /* Pods-FmdbTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FmdbTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-FmdbTest/Pods-FmdbTest.release.xcconfig"; sourceTree = "<group>"; };
+		C33ECA0F12EAB749DF3D20A8 /* libPods-FmdbTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FmdbTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A05572DDC398371BC4CCD90 /* libPods-FmdbTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +96,8 @@
 				265793AE1C9A8F0A006BF301 /* FmdbTestTests */,
 				265793B91C9A8F0A006BF301 /* FmdbTestUITests */,
 				265793931C9A8F0A006BF301 /* Products */,
+				C953F07548D9D62F8E2FCF63 /* Pods */,
+				F7862157681022A561BAFB4B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +123,10 @@
 				265793A31C9A8F0A006BF301 /* LaunchScreen.storyboard */,
 				265793A61C9A8F0A006BF301 /* Info.plist */,
 				265793951C9A8F0A006BF301 /* Supporting Files */,
+				265793CB1C9A900B006BF301 /* FmdbEngine.h */,
+				265793CC1C9A900B006BF301 /* FmdbEngine.m */,
+				265793CE1C9A9844006BF301 /* StudentModel.h */,
+				265793CF1C9A9844006BF301 /* StudentModel.m */,
 			);
 			path = FmdbTest;
 			sourceTree = "<group>";
@@ -140,6 +157,23 @@
 			path = FmdbTestUITests;
 			sourceTree = "<group>";
 		};
+		C953F07548D9D62F8E2FCF63 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2920BDE8C7F62AD5CEFFECAF /* Pods-FmdbTest.debug.xcconfig */,
+				B2287B428A48E40699E33919 /* Pods-FmdbTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F7862157681022A561BAFB4B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C33ECA0F12EAB749DF3D20A8 /* libPods-FmdbTest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +181,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 265793BF1C9A8F0A006BF301 /* Build configuration list for PBXNativeTarget "FmdbTest" */;
 			buildPhases = (
+				7F534F8BE4E664E26BA47535 /* Check Pods Manifest.lock */,
 				2657938E1C9A8F0A006BF301 /* Sources */,
 				2657938F1C9A8F0A006BF301 /* Frameworks */,
 				265793901C9A8F0A006BF301 /* Resources */,
+				F147B64DF3484506F015C533 /* Embed Pods Frameworks */,
+				4EF32D830EC808AE54E5AA2B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,6 +244,7 @@
 				TargetAttributes = {
 					265793911C9A8F0A006BF301 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 58WUN2RUM7;
 					};
 					265793AA1C9A8F0A006BF301 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -265,6 +303,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4EF32D830EC808AE54E5AA2B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FmdbTest/Pods-FmdbTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F534F8BE4E664E26BA47535 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F147B64DF3484506F015C533 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FmdbTest/Pods-FmdbTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2657938E1C9A8F0A006BF301 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -272,6 +358,8 @@
 			files = (
 				2657939D1C9A8F0A006BF301 /* ViewController.m in Sources */,
 				2657939A1C9A8F0A006BF301 /* AppDelegate.m in Sources */,
+				265793D01C9A9844006BF301 /* StudentModel.m in Sources */,
+				265793CD1C9A900B006BF301 /* FmdbEngine.m in Sources */,
 				265793971C9A8F0A006BF301 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,8 +497,10 @@
 		};
 		265793C01C9A8F0A006BF301 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2920BDE8C7F62AD5CEFFECAF /* Pods-FmdbTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = FmdbTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dadabus.FmdbTest;
@@ -420,8 +510,10 @@
 		};
 		265793C11C9A8F0A006BF301 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2287B428A48E40699E33919 /* Pods-FmdbTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = FmdbTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dadabus.FmdbTest;
@@ -496,6 +588,7 @@
 				265793C11C9A8F0A006BF301 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		265793C21C9A8F0A006BF301 /* Build configuration list for PBXNativeTarget "FmdbTestTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +597,7 @@
 				265793C41C9A8F0A006BF301 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		265793C51C9A8F0A006BF301 /* Build configuration list for PBXNativeTarget "FmdbTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +606,7 @@
 				265793C71C9A8F0A006BF301 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
