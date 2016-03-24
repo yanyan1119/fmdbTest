@@ -44,8 +44,8 @@ static FMDatabaseQueue *_dbQueue;
      NSMutableArray *array = [[NSMutableArray alloc] initWithCapacity:count];
     for (NSInteger i = 0; i < count; i ++) {
         StudentModel *model = [[StudentModel alloc] init];
-        model.number = i + 10000;
-        model.name = [NSString stringWithFormat:@"lily%@",@(i)];
+        model.myNumber = i + 10000;
+        model.myName = [NSString stringWithFormat:@"lily%@",@(i)];
         [array addObject:model];
     }
     [[FmdbEngine shareInstance] insertDBWithoutIntransaction:array];
@@ -59,7 +59,7 @@ static FMDatabaseQueue *_dbQueue;
       NSTimeInterval start = [[NSDate date]timeIntervalSince1970];
       for (StudentModel *model in array) {
           NSString *sql = [NSString stringWithFormat:@"insert into student (name,number) values (?,?)"];
-          [db executeUpdate:sql,model.name,[NSNumber numberWithInteger:model.number]];
+          [db executeUpdate:sql,model.myName,[NSNumber numberWithInteger:model.myNumber]];
       }
       NSTimeInterval end = [[NSDate date]timeIntervalSince1970];
       NSLog(@"----- insertDBWithoutIntransaction :%.6f",end-start);
@@ -76,7 +76,7 @@ static FMDatabaseQueue *_dbQueue;
             [db beginTransaction];
             for (StudentModel *model in array) {
                 NSString *sql = [NSString stringWithFormat:@"insert into student (name,number) values (?,?)"];
-                [db executeUpdate:sql,model.name,[NSNumber numberWithInteger:model.number]];
+                [db executeUpdate:sql,model.myName,[NSNumber numberWithInteger:model.myNumber]];
             }
         }
         @catch (NSException *exception) {

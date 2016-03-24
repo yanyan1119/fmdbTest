@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>JSPatch.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-FmdbTest.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,22 +42,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>53D91900B8AC1FA4BCD1B77D667975F4</key>
+		<key>5A03B6067243DE277066A3B7EF8B08BD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>70219F1F357EC3C5435E2D45A0E38308</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>788015222AD592C9A252E099CFFB3DDD</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>8F5448F93BF1806827ABAD8A155CDE4F</key>
+		<key>8F398436F4C40D6C3A39FA8688C7CF2E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -63,6 +58,21 @@
 			<true/>
 		</dict>
 		<key>9F12FB4A63E20F601CFB2E64A65B57C1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B35E9F11011A2038EDA7D0456F1B6DF6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D0E237391B352E96F4BEE7B096B4C3E0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FD1D53461DE538B7C8DFE0B76D857587</key>
 		<dict>
 			<key>primary</key>
 			<true/>

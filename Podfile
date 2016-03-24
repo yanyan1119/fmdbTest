@@ -9,6 +9,7 @@ pod 'YYCategories'
 pod 'AFNetworking'
 pod 'SDWebImage'
 pod 'FMDB'
+pod 'JSPatch' 
 
 end
 

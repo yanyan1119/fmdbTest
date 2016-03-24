@@ -17,6 +17,9 @@ PODS:
   - FMDB (2.6):
     - FMDB/standard (= 2.6)
   - FMDB/standard (2.6)
+  - JSPatch (0.2):
+    - JSPatch/Core (= 0.2)
+  - JSPatch/Core (0.2)
   - SDWebImage (3.7.5):
     - SDWebImage/Core (= 3.7.5)
   - SDWebImage/Core (3.7.5)
@@ -28,6 +31,7 @@ PODS:
 DEPENDENCIES:
   - AFNetworking
   - FMDB
+  - JSPatch
   - SDWebImage
   - YYCategories
   - YYModel
@@ -35,6 +39,7 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   AFNetworking: a0075feb321559dc78d9d85b55d11caa19eabb93
   FMDB: c1968bab3ab0aed38f66cb778ae1e7fa9a652b6e
+  JSPatch: 23dcceeec8f8357644f8ef70eb002ef2dbd830de
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
   YYCategories: 08fccb29097e711091d828cdf77a2066ad8ba806
   YYModel: 7a467eff45ae3641c33efb136c262d33b6f48c1a
